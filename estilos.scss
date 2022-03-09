@@ -1,0 +1,100 @@
+/* MAP */ 
+
+$colores: (
+    'color-rosa': rgb(248, 245, 245),
+    'color-secciones': rgb(243, 232, 232),
+);
+
+/* MAP */ 
+/* VARIABLES */
+$max: 100%;
+/* VARIABLES */
+
+.div{
+    background-color: map-get($colores, color-secciones);
+}
+
+main{
+    background-color: map-get($colores, color-secciones);
+}
+
+.secciones{
+    background-color: map-get($colores, color-secciones);
+}
+
+.secciones2{
+    background-color: map-get($colores, color-secciones);
+}
+
+
+/* Anidaciones */
+
+header{
+    background-color: map-get($colores, color-rosa);
+    h1{
+        width: $max;
+        font-size: $max+60;
+        text-align: center;
+        padding-top: 1%;
+        border-bottom: 1px solid black;
+        font-family: sans-serif;
+        /* Fuente y tamaño del titulo principal */
+    }
+}
+
+nav{
+    ul{
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        /* Ubicacion del navegador */
+
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 1%;
+            /* Estilo de la lista navegador */
+        }
+    }
+}
+
+nav{
+    a{
+        text-decoration: none;
+        font-size: $max+30;
+        color: black;
+        /* Fuente y tamaño del navegador */
+    }
+}
+
+
+
+/* MIXIN */
+
+@mixin fotos {
+    background-size: cover;
+    background-position: center;
+}
+
+.fotx1{
+    background-image: url(imagenes/imagenesinicio/perros2.jpg);
+    @include fotos;
+    /* Primera foto */
+}
+.fotx2{
+    background-image: url(imagenes/imagenesinicio/perronegro.jpg);
+    @include fotos;
+    /* Segunda foto */
+}
+.fotx3{
+    background-image: url(imagenes/imagenesinicio/gatoyperro.jpg);
+    @include fotos;
+    background-repeat: no-repeat;
+    /* Tercera foto */
+}
+
+
+
+
+
+/* MIXIN */

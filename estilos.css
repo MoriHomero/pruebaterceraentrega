@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* MAP */
+/* MAP */
+/* VARIABLES */
+/* VARIABLES */
+.div {
+  background-color: #f3e8e8;
+}
+
+main {
+  background-color: #f3e8e8;
+}
+
+.secciones {
+  background-color: #f3e8e8;
+}
+
+.secciones2 {
+  background-color: #f3e8e8;
+}
+
+/* Anidaciones */
+header {
+  background-color: #f8f5f5;
+}
+
+header h1 {
+  width: 100%;
+  font-size: 160%;
+  text-align: center;
+  padding-top: 1%;
+  border-bottom: 1px solid black;
+  font-family: sans-serif;
+  /* Fuente y tamaño del titulo principal */
+}
+
+nav ul {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /* Ubicacion del navegador */
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 1%;
+  /* Estilo de la lista navegador */
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 130%;
+  color: black;
+  /* Fuente y tamaño del navegador */
+}
+
+/* MIXIN */
+.fotx1 {
+  background-image: url(imagenes/imagenesinicio/perros2.jpg);
+  background-size: cover;
+  background-position: center;
+  /* Primera foto */
+}
+
+.fotx2 {
+  background-image: url(imagenes/imagenesinicio/perronegro.jpg);
+  background-size: cover;
+  background-position: center;
+  /* Segunda foto */
+}
+
+.fotx3 {
+  background-image: url(imagenes/imagenesinicio/gatoyperro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Tercera foto */
+}
+
+/* MIXIN */
+/*# sourceMappingURL=estilos.css.map */

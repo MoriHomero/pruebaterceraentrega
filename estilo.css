@@ -1,0 +1,911 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+*::selection {
+    background: rgb(201, 174, 174);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(248, 245, 245);
+    width: 100%;
+    /* Tamaño del header */
+}
+
+
+/*
+header h1{
+    width: 100%;
+    font-size: 160%;
+    text-align: center;
+    padding-top: 1%;
+    border-bottom: 1px solid black;
+    font-family: sans-serif;
+    /* Fuente y tamaño del titulo principal 
+}*/
+
+/*
+nav ul{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* Ubicacion del navegador 
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 1%;
+    /* Estilo de la lista navegador 
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 130%;
+    color: black;
+    /* Fuente y tamaño del navegador 
+}*/
+
+nav ul li :hover{
+    color: rgb(196, 112, 112);
+    text-shadow: 0.5px 0.5px;
+    transition: all 0.1s;
+    /* Animacion del header */
+}
+
+header main{
+    max-height: 100vh;
+}
+
+.div{
+    min-height: 100vh;
+    /* background del main */
+}
+
+main{
+    min-height: 85vh;
+    width: 100%;
+    padding-top: 3%;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* Diseño del MAIN */
+}
+
+.cuadromascota{
+    padding-top: 3%;
+}
+
+.titulogaleriasec{
+    margin: auto;
+    padding-top: 1%;
+    text-shadow: black 0.2px 0.1px;
+    /* Margen titulo galeria */
+}
+
+.titulogaleria{
+    text-decoration: none;
+    font-size: 180%;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* Fuente y tamaño del navegador */
+}
+
+.titulogaleriasec :hover{
+    color: rgb(196, 112, 112);
+    text-shadow: 0.5px 0.5px;
+    transition: all 0.1s;
+    /* Animacion del titulo de galeria */
+}
+
+
+#sec2bg{
+    background-image: url(imagenes/haikei/wave-haikei.svg), url(imagenes/imagenesinicio/perrotexto.jpg); 
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    /* Background con imagen para seccion de NOSOTROS */
+}
+
+
+#mensajeinicio{
+    width: 100%;
+    font-size: 280%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: rgb(70, 70, 70) 0.3px 0.3px;
+    /* Fuente y tamaño del mensaje "Gracias por visitar el sitio de falderos" */
+}
+
+.titulosec{
+    text-align: center;
+    background-color: rgb(214, 171, 171);
+    margin: auto;
+    font-size: 180%;
+    min-height: 37px;
+    max-height: 37px;
+    /* Fuente y tamaño del titulo de las paginas */
+}
+
+
+.titulopaginas{
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    /* Ubicacion del titulo de las paginas */
+}
+
+.nosotrostext{
+    padding: 0.7%;
+    font-size: 170%;
+    text-align: left;
+    margin-left: 60%;
+    margin-bottom: 60%;
+    background-color: rgb(245, 236, 236);
+    filter:alpha(opacity=50);
+    -moz-opacity:.90;opacity:.90;
+    border-radius: 2%;
+    /* Ubicacion y diseño del texto sobre "NOSOTROS" */
+}
+
+.cuadromascota{
+    margin: auto;
+    /* Margen del article de la foto de mascotas */
+}
+
+
+/* GRIDS FOTOS INICIO */
+.cuadromascota{
+    width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-gap: 5px;
+}
+
+.fotx1{
+    background-image: url(imagenes/imagenesinicio/perros2.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Primera foto */
+}
+.fotx2{
+    background-image: url(imagenes/imagenesinicio/perronegro.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Segunda foto */
+}
+.fotx3{
+    background-image: url(imagenes/imagenesinicio/gatoyperro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Tercera foto */
+}
+
+.fotx{
+    background-color: gray;
+    border: 1% solid rgb(226, 225, 225);
+    width: 100%;
+    /* Tamaño y back de todas las fotos */
+}
+
+.cuadromascota{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+/* FIN GRIDS FOTOS INICIO */
+
+
+#seccionproductos{
+    display: flex;
+    filter:alpha(opacity=50);
+    -moz-opacity:.90;opacity:.90;
+    /* Diseño de la seccion de productos */
+}
+
+.secciones{
+    display: flex;
+    min-height: 96vh;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: space-around;
+    margin: auto;
+    /* Diseño de las secciones en general */
+}
+
+.secciones2{
+    display: flex;
+    min-height: 84vh;
+    max-height: 84vh;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: space-around;
+    margin: auto;
+    /* Diseño de las seccion CONSULTAS */
+}
+
+
+.fotosproductos{
+    width: 100%;
+    height: 24em;
+    padding: 1em;
+    margin-bottom: 3%;
+    border-radius: 8%;
+    /* Tamaño y diseño de las fotos de los productos */
+}
+
+.fotosproductos:hover{
+    transition: all 0.2s;
+    transform: scale(1.02);
+    /* Animacion de las fotos de los productos */
+}
+
+.imagenesservicios{
+    width: 100%;
+    height: 26em;
+    /* Tamaño de las fotos de los servicios */
+}
+
+.imagenesservicios:hover{
+    transition: all 0.2s;
+    transform: scale(1.02);
+    box-shadow: 1px 2px 2px;
+    /* Animacion de las fotos de los productos */
+}
+
+a img{
+    text-decoration: none;
+    color: black;
+    /* Color de fondo para las imagenes */
+}
+
+article h3{
+    text-align: center;
+    filter:alpha(opacity=50);
+    padding-top: 2%;
+    /* Ubicacion del texto que esta abajo de las fotos */
+}
+
+p{
+    text-align: center;
+    font-size: 110%;
+    /* Tamaño y posicion del texto que esta abajo de las fotos */
+}
+
+h3{
+    font-size: 120%;
+    /* Tamaño y fuente del titulo que esta abajo de las fotos */
+}
+
+.consultastext{
+    font-size: 170%;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    /* Diseño y ubicacion del texto en la seccion de CONSULTAS */
+}
+
+
+.footerestilo{
+    background: rgb(218, 213, 213);
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* Ubicacion, diseño y tipo de fuente del FOOTER */
+}
+
+.footerindex{
+    background: rgb(218, 213, 213);
+    min-height: 100px;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* Ubicacion, diseño y tipo de fuente del FOOTER */
+}
+
+
+.listafooter{
+    list-style: none;
+    display: inline;
+    padding: 0 2%;
+    /* Diseño de la lista que esta en el FOOTER */
+}
+
+.listafooter :hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+    /* Animacion del FOOTER */
+}
+
+.botonsubir{
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(88, 88, 88);
+    position: fixed;
+    left: 0.5%;
+    bottom: 0.8%;
+    border-radius: 50%;
+    /* Boton para voler al inicio de la pagina */
+}
+
+i{
+    color: rgb(70, 70, 70);
+    /* Color del boton */
+}
+
+.formulario{
+    text-align: center;
+    padding: 2%;
+    margin: 5% 5%;
+    border-radius: 1%;
+    background-color: rgb(179, 179, 179);
+    width: 20%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    filter:alpha(opacity=50);
+    -moz-opacity:.95;opacity:.95;
+    box-shadow: rgb(236, 205, 205) 1px 1px;
+    /* Diseño del FORMULARIO */
+}
+
+.ulenvios{
+    margin-left: auto;
+    margin-right: auto;
+    /* Ubicacion del texto/lista de la seccion ENVIOS */
+
+}
+
+.listaenvios{
+    list-style: none;
+    /* Diseño de la lista/texto en la seccion ENVIOS */
+}
+
+.listaenvios li p{
+    font-size: 140%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* Tamaño y tipo de fuente de la lista de la seccion ENVIOS */
+}
+
+.backimagenenvios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Diseño y organizacion de las fotos de las secciones fuera del onepage */
+}
+
+.imagenenvios{
+    width: 40%;
+    /* Tamaño de las imagenes fuera del onepage */
+}
+
+
+
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE 319 */
+
+@media only screen and (max-width: 319px){
+
+    header h1{
+        width: 100%;
+        font-size: 120%;
+        /* Fuente y tamaño del titulo principal */
+    }
+
+    nav a{
+        font-size: 85%;
+        /* Fuente y tamaño del navegador */
+    }
+
+    #mensajeinicio{
+        width: 100%;
+        font-size: 120%;
+        /* Fuente y tamaño del mensaje "Gracias por visitar el sitio de falderos" */
+    }
+
+    .titulogaleria{
+        font-size: 130%;
+        /* Fuente y tamaño del titulo de galeria */
+    }
+
+    .titulosec{
+        font-size: 140%;
+        min-height: 4vh;
+        max-height: 4vh;
+        /* Fuente y tamaño del titulo de las paginas */
+    }
+
+    .cuadromascota{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    .fotx1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+
+    .nosotrostext{
+        padding: 0%;
+        font-size: 122%;
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background-color:transparent;
+        /* Ubicacion y diseño del texto sobre "NOSOTROS" */
+    }
+
+    .fotosproductos{
+        height: 10em;
+        /* Tamaño y diseño de las fotos de los productos */
+    }
+
+
+    .imagenesservicios{
+        width: 100%;
+        height: 18em;
+        /* Tamaño de las fotos de los servicios */
+    }
+
+    p{
+        font-size: 75%;
+        /* Tamaño y posicion del texto que esta abajo de las fotos */
+    }
+
+    h3{
+        font-size: 95%;
+        /* Tamaño y fuente del titulo que esta abajo de las fotos */
+    }
+
+
+    .consultastext{
+        font-size: 105%;
+        /* Diseño y ubicacion del texto en la seccion de CONSULTAS */
+    }
+
+    .formulario{
+        text-align: center;
+        padding: 5%;
+        padding-bottom: 5%;
+        margin: 3% 3%;
+        border-radius: 1%;
+        width: 75%;
+        font-size: 95%;
+        /* Diseño del FORMULARIO */
+    }
+
+    .botonsubir{
+        height: 20px;
+        width: 20px;
+        position: fixed;
+        left: 1%;
+        bottom: 1%;
+        border-radius: 50%;
+        text-align: center;
+        /* Boton para voler al inicio de la pagina */
+    }
+
+    .listaenvios li p{
+        font-size: 105%;
+        /* Tamaño y tipo de fuente de la lista de la seccion ENVIOS */
+    }
+
+    .backimagenenvios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* Diseño y organizacion de las fotos de las secciones fuera del onepage */
+    }
+
+    .imagenenvios{
+        width: 80%;
+        /* Tamaño de las imagenes fuera del onepage */
+    }
+
+}
+
+
+/* RESPONSIVE MOBILE  319 */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE 320 480 */
+
+
+@media only screen and (min-width: 320px) and (max-width:480px){
+
+    header h1{
+        width: 100%;
+        font-size: 140%;
+        /* Fuente y tamaño del titulo principal */
+    }
+
+    nav a{
+        font-size: 100%;
+        /* Fuente y tamaño del navegador */
+    }
+
+    #mensajeinicio{
+        width: 100%;
+        font-size: 155%;
+        /* Fuente y tamaño del mensaje "Gracias por visitar el sitio de falderos" */
+    }
+
+    .titulogaleria{
+        font-size: 135%;
+        /* Fuente y tamaño del navegador */
+    }
+
+    .titulosec{
+        font-size: 145%;
+        /* Fuente y tamaño del titulo de las paginas */
+    }
+
+    .cuadromascota{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .fotx1{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+
+    .nosotrostext{
+        padding: 0%;
+        font-size: 130%;
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background-color:transparent;
+        /* Ubicacion y diseño del texto sobre "NOSOTROS" */
+    }
+
+    .fotosproductos{
+        height: 10em;
+        /* Tamaño y diseño de las fotos de los productos */
+    }
+
+
+    .imagenesservicios{
+        width: 100%;
+        height: 18em;
+        /* Tamaño de las fotos de los servicios */
+    }
+
+    p{
+        font-size: 75%;
+        /* Tamaño y posicion del texto que esta abajo de las fotos */
+    }
+
+    h3{
+        font-size: 95%;
+        /* Tamaño y fuente del titulo que esta abajo de las fotos */
+    }
+
+
+    .consultastext{
+        font-size: 105%;
+        /* Diseño y ubicacion del texto en la seccion de CONSULTAS */
+    }
+
+    .formulario{
+        text-align: center;
+        padding: 15%;
+        padding-bottom: 5%;
+        margin: 3% 3%;
+        border-radius: 1%;
+        width: 75%;
+        font-size: 95%;
+        /* Diseño del FORMULARIO */
+    }
+
+    .botonsubir{
+        height: 20px;
+        width: 20px;
+        position: fixed;
+        left: 1%;
+        bottom: 1%;
+        border-radius: 50%;
+        text-align: center;
+        /* Boton para voler al inicio de la pagina */
+    }
+
+    .listaenvios li p{
+        font-size: 110%;
+        /* Tamaño y tipo de fuente de la lista de la seccion ENVIOS */
+    }
+
+    .backimagenenvios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* Diseño y organizacion de las fotos de las secciones fuera del onepage */
+    }
+
+    .imagenenvios{
+        width: 80%;
+        /* Tamaño de las imagenes fuera del onepage */
+    }
+
+}
+
+/* RESPONSIVE MOBILE 320 480 */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE 480 600 */
+
+
+@media only screen and (min-width:480px) and (max-width: 600px){
+
+    header h1{
+        width: 100%;
+        font-size: 145%;
+        /* Fuente y tamaño del titulo principal */
+    }
+
+    nav a{
+        font-size: 120%;
+        /* Fuente y tamaño del navegador */
+    }
+
+    #mensajeinicio{
+        width: 100%;
+        font-size: 180%;
+        /* Fuente y tamaño del mensaje "Gracias por visitar el sitio de falderos" */
+    }
+
+    .titulogaleria{
+        font-size: 140%;
+        /* Fuente y tamaño del titulo de galeria */
+    }
+
+    .titulosec{
+        font-size: 140%;
+        min-height: 4vh;
+        max-height: 4vh;
+        /* Fuente y tamaño del titulo de las paginas */
+    }
+
+    .cuadromascota{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 160px);
+    }
+
+    .fotx1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .fotx2{
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+
+    .fotx3{
+        grid-column: 1/3;
+        grid-row: 3/3;
+    }
+
+
+    .nosotrostext{
+        padding: 0%;
+        font-size: 140%;
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background-color:transparent;
+        /* Ubicacion y diseño del texto sobre "NOSOTROS" */
+    }
+
+    .fotosproductos{
+        height: 12em;
+        /* Tamaño y diseño de las fotos de los productos */
+    }
+
+
+    .imagenesservicios{
+        width: 100%;
+        height: 19em;
+        /* Tamaño de las fotos de los servicios */
+    }
+
+    p{
+        font-size: 85%;
+        /* Tamaño y posicion del texto que esta abajo de las fotos */
+    }
+
+    h3{
+        font-size: 95%;
+        /* Tamaño y fuente del titulo que esta abajo de las fotos */
+    }
+
+
+    .consultastext{
+        font-size: 105%;
+        /* Diseño y ubicacion del texto en la seccion de CONSULTAS */
+    }
+
+    .formulario{
+        text-align: center;
+        padding: 5%;
+        padding-bottom: 5%;
+        margin: 3% 50%;
+        border-radius: 1%;
+        width: 75%;
+        font-size: 95%;
+        /* Diseño del FORMULARIO */
+    }
+
+    .botonsubir{
+        height: 20px;
+        width: 20px;
+        position: fixed;
+        left: 1%;
+        bottom: 1%;
+        border-radius: 50%;
+        text-align: center;
+        /* Boton para voler al inicio de la pagina */
+    }
+
+    .listaenvios li p{
+        font-size: 110%;
+        /* Tamaño y tipo de fuente de la lista de la seccion ENVIOS */
+    }
+
+    .backimagenenvios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* Diseño y organizacion de las fotos de las secciones fuera del onepage */
+    }
+
+    .imagenenvios{
+        width: 70%;
+        /* Tamaño de las imagenes fuera del onepage */
+    }
+
+}
+
+
+/* RESPONSIVE TABLET 480 600 */
+/* RESPONSIVE TABLET */
+/* RESPONSIVE TABLET */
+/* RESPONSIVE TABLET 600 767 */
+
+@media only screen and (min-width:600px) and (max-width:1366px){
+
+
+
+    header h1{
+        width: 100%;
+        font-size: 150%;
+        /* Fuente y tamaño del titulo principal */
+    }
+
+    nav a{
+        font-size: 130%;
+        /* Fuente y tamaño del navegador */
+    }
+
+    #mensajeinicio{
+        width: 100%;
+        font-size: 200%;
+        /* Fuente y tamaño del mensaje "Gracias por visitar el sitio de falderos" */
+    }
+
+    .titulogaleria{
+        font-size: 145%;
+        /* Fuente y tamaño del titulo de galeria */
+    }
+
+    .titulosec{
+        font-size: 150%;
+        /* Fuente y tamaño del titulo de las paginas */
+    }
+
+
+
+
+    .nosotrostext{
+        padding: 0%;
+        font-size: 150%;
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background-color:transparent;
+        /* Ubicacion y diseño del texto sobre "NOSOTROS" */
+    }
+
+    .fotosproductos{
+        height: 20em;
+        /* Tamaño y diseño de las fotos de los productos */
+    }
+
+
+    .imagenesservicios{
+        width: 100%;
+        height: 21em;
+        /* Tamaño de las fotos de los servicios */
+    }
+
+    p{
+        font-size: 100%;
+        /* Tamaño y posicion del texto que esta abajo de las fotos */
+    }
+
+    h3{
+        font-size: 110%;
+        /* Tamaño y fuente del titulo que esta abajo de las fotos */
+    }
+
+
+    .consultastext{
+        font-size: 105%;
+        /* Diseño y ubicacion del texto en la seccion de CONSULTAS */
+    }
+
+    .formulario{
+        text-align: center;
+        padding: 5%;
+        padding-bottom: 5%;
+        margin: 3% 50%;
+        border-radius: 1%;
+        width: 75%;
+        font-size: 95%;
+        /* Diseño del FORMULARIO */
+    }
+
+    .botonsubir{
+        height: 20px;
+        width: 20px;
+        position: fixed;
+        left: 1%;
+        bottom: 1%;
+        border-radius: 50%;
+        text-align: center;
+        /* Boton para voler al inicio de la pagina */
+    }
+
+    .listaenvios li p{
+        font-size: 115%;
+        /* Tamaño y tipo de fuente de la lista de la seccion ENVIOS */
+    }
+
+    .backimagenenvios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* Diseño y organizacion de las fotos de las secciones fuera del onepage */
+    }
+
+    .imagenenvios{
+        width: 70%;
+        /* Tamaño de las imagenes fuera del onepage */
+    }
+
+}
